@@ -1,42 +1,3 @@
-// const express = require("express");
-// const app = express();
-// const port = 3000;
-
-
-// app.get("/", (req, res) => {
-//     let kidneyId = req.query.kidneyId;
-//     let userName = req.header.userName;
-//     let pass = req.header.pass;
-
-//     if (userName != "Akash" || pass != "pass") {
-//         res.status(403).json({
-//             msg: "Wrong Credentials"
-//         });
-//         return;
-//     }
-
-//     if (kidneyId != 1 || kidneyId != 2) {
-//         req.status(411).json({
-//             msg: "Wrong Input"
-//         });
-//         return;
-//     }
-
-//     if (userName === "Akash" && pass === "pass" && (kidneyId === 1 || kidneyId === 2)) {
-//         res.status(403).json({
-//             msg: "Wrong Credentials"
-//         });
-//         return;
-//     }
-// });
-
-// app.listen(port, () => {
-//     console.log(`App is listening on port ${port}.`);
-// });
-
-
-
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
@@ -61,3 +22,7 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
 });
+
+
+
+
